@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,400;1,800&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.no-transition *{
+	transition: none !important;
+}
+
+/* HEADER */
+
+header{
+	background-color: rgba(0,0,0,0.5);
+	padding: 10px 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+header .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#logo-link{
+	line-height: 0;
+}
+
+#logo-link img{
+	width: 140px;
+}
+
+
+header nav ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+
+header nav a{
+	padding: 1em;
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+
+header nav li a:not([href]){
+	pointer-events: none;
+}
+
+
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+
+/* SECTION 1 */
+
+
+#section1{
+    background-color: #0078bb;
+    height: 640px;
+    padding-bottom: 20px;
+    background-image: url('../images/hero-image.jpg');
+    background-size: cover;
+    background-position: right bottom;
+    color: white;
+}
+
+#section1 h1{
+    font-size:  96px;
+    margin: 0;
+}
+
+#section1 h2{
+    font-size:  30px;
+}
+
+#section1 a{
+    font-size:  16px;
+}
+
+#section1 .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#section1 .container > div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#section1 small{
+    text-align: center;
+    max-width: 70%;
+    align-self: center;
+    line-height: 1.4em;
+}
+
+#section1 small a{
+    font-size: inherit;
+    color: inherit;
+}
+
+.cta-button{
+    padding: 1em 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: block;
+    border-radius: 500px;
+    transition: background-color 0.3s;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.cta-button--blue{
+    background-color: #1E3264;
+}
+
+.cta-button--blue:hover{
+    background-color: #2A468D;
+}
+
+.cta-button--green{
+    background-color: #1DB954;
+}
+
+.cta-button--green:hover{
+    background-color: #1ED760;
+}
+
+.cta-button--white{
+    background-color: white;
+    color: #1DB954;
+    border: solid thin #1DB954;
+}
+
+.cta-button--white:hover{
+    background-color: #1ED760;
+    color: white;
+}
+
+
+@keyframes fadeIn{
+    from {opacity: 0; transform: translateY(100%);}
+    to {opacity: 1; transform: translateY(0%);}
+}
+
+#section1 .cta-button{
+    animation: fadeIn 1s;
+}
