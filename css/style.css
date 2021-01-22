@@ -71,7 +71,7 @@ header nav li a:not([href]){
     background-color: #0078bb;
     height: 640px;
     padding-bottom: 20px;
-    background-image: url('../images/hero-image.jpg');
+    background-image: url('../images/head-image.jpg');
     background-size: cover;
     background-position: right bottom;
     color: white;
@@ -164,4 +164,41 @@ header nav li a:not([href]){
 
 #section1 .cta-button{
     animation: fadeIn 1s;
+}
+
+/* SECTION 2 */
+
+#section2{
+	background-color: white;
+	color: black;
+	padding: 40px 0;
+}
+
+#section2 .container{
+	display: flex;
+	flex-direction: column;
+}
+
+#section2 .container > h1{
+	text-align: center;
+	font-size: 48px;
+}
+
+.benefit-container{
+	display: flex;
+}
+
+.benefit-container article{
+	flex: 1;
+	text-align: center;
+	padding: 30px;
+}
+
+.benefit-container article h1{
+	font-size: 20px;
+}
+
+.benefit-container article h2{
+	font-size: 14px;
+	font-weight: normal;
 }
